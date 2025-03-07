@@ -36,10 +36,11 @@ class BedrockLLMConfig:
             secret_key="",
             model="anthropic.claude-3-5-sonnet-20240620-v1:0", # Defaults to Claude 3.5, supported model list: https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html
             # system prompt
-            prompt=DEFAULT_CHAT_SYSTEM_PROMPT,
+            #prompt=DEFAULT_CHAT_SYSTEM_PROMPT,
+            prompt="",
             top_p=1.0,
             temperature=0.1,
-            max_tokens=512,
+            max_tokens=99999,
             mode='chat', # chat | translate
             user_template='',
             input_language = '',
