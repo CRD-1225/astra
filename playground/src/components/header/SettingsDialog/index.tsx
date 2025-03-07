@@ -73,6 +73,7 @@ const SettingsDialog = ({
     partialStabilization,
     voice,
     greeting,
+    systemPrompt,
   ]);
 
   return (

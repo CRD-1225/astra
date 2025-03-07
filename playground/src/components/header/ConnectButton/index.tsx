@@ -44,6 +44,7 @@ const ConnectButton = () => {
         setPartialStabilization(settings.partialStabilization || false);
         setVoice(settings.voice || "male");
         setGreeting(settings.greeting || "");
+        setSystemPrompt(settings.systemPrompt || "");
       }
     };
 
@@ -94,7 +95,7 @@ const ConnectButton = () => {
         outputLanguage: outputLanguage,
         partialStabilization: partialStabilization,
         greeting: greeting,
-        systemPrompt: systemPrompt, // 添加这行
+        systemPrompt: systemPrompt,
       });
 
       if (res?.code != 0) {
